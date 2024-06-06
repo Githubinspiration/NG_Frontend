@@ -1,0 +1,32 @@
+{
+  "name": "My Progressive Web App",
+  "short_name": "My PWA",
+  "description": "This is a sample Progressive Web App",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "images/icon-48.png",
+    "96": "images/icon-96.png",
+    "192": "images/icon-192.png",
+    "512": "images/icon-512.png"
+  },
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4A90E2",
+  "permissions": [
+    "notifications"
+  ],
+  "gcm_sender_id": "103953800507",
+  "serviceworker": {
+    "src": "service-worker.js",
+    "scope": "/"
+  },
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.app",
+      "id": "com.example.app"
+    }
+  ]
+}
